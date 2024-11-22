@@ -1,0 +1,135 @@
+<!-- FILEPATH: /e:/spring_projects/chat-app/src/main/resources/static/index.html -->
+<!--
+This is the updated HTML code for the index page of the Chat App.
+The page contains a form for entering a username and a chat section for group messaging.
+The password field has been removed.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+  />
+  <title>InstaChat</title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+  />
+  <!-- External Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    .logout-button {
+      position: absolute;
+      top: 20px;     /* Adjust top padding as needed */
+      right: 20px;   /* Adjust right padding as needed */
+      padding: 10px 20px;
+      color: white;
+      background-color: #fd033d;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .logout-button:hover {
+      background-color: #bc0911;
+    }
+
+  </style>
+</head>
+<body
+        style="
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('/images/space.jpg');
+      background-size: cover;
+    "
+>
+<noscript>
+  <h2>Please enable JavaScript in your browser!!!</h2>
+</noscript>
+
+<div id="username-page">
+  <div class="username-page-container">
+    <h1 class="title">Enter your nickname</h1>
+    <form id="usernameForm" name="usernameForm">
+      <div class="form-group">
+        <input
+                type="text"
+                id="name"
+                placeholder="Name"
+                autocomplete="off"
+                class="form-control"
+                autofocus
+        />
+        <span id="mes" style="color: #ff0000"></span>
+      </div>
+      <div class="form-group">
+        <button
+                type="submit"
+                class="username-submit"
+                style="color: #ffffff; background-color: green"
+        >
+          <i class="fa-solid fa-right-to-bracket"></i> Enter
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="chat-page" class="hidden">
+  <a th:href="@{/logout}" class="logout-button" style="z-index: 1">Logout</a>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>Group Chat</h2>
+    </div>
+    <div class="connecting">Connecting to the chat...</div>
+    <ul
+            id="messageArea"
+            style="
+            background-color: rgba(0, 0, 0, 0.26);
+            backdrop-filter: blur(10px);
+          "
+    ></ul>
+    <form id="messageForm" name="messageForm">
+      <div class="form-group">
+        <div class="input-group clearfix">
+          <input
+                  type="text"
+                  id="message"
+                  placeholder="Message"
+                  autocomplete="off"
+                  autofocus
+                  class="form-control"
+                  style="
+                  background-color: transparent;
+                  backdrop-filter: blur(24px);
+                  color: #ffffff;
+                "
+          />
+          <button type="submit" class="btn">
+            <i class="fa-solid fa-paper-plane"></i> Send
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+<script type="text/javascript">
+  window.onbeforeunload = function () {
+    return "Dude, are you sure you want to leave? Think of the kittens!";
+  };
+</script>
+</body>
+</html>
