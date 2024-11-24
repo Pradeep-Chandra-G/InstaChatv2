@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
+    <title>InstaChat Login</title>
+    <link rel="icon" type="image/png" href="/images/chat.png">
     <!-- Bootstrap CSS for modern layout -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,7 +17,7 @@
         /* Global Styles */
         body {
             background-color: #f8f9fa;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         /* Navbar Styling */
@@ -27,10 +27,12 @@
         }
 
         .navbar-brand {
-            color: #ffffff !important;
-            font-weight: bold;
-            font-size: 1.6em;
-            letter-spacing: 1px;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
         }
 
         .navbar-brand:hover {
@@ -148,7 +150,10 @@
 <!-- Dark Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="#" onclick="location.href='/registration'">InstaChat Registration and Login Module</a>
+        <a class="navbar-brand" href="#" style="display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; font-size: 24px; font-weight: bold; color: #fff; text-decoration: none;">
+            INSTACHAT LOGIN MODULE
+        </a>
+
     </div>
 </nav>
 
