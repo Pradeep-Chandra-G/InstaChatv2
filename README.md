@@ -81,17 +81,17 @@ InstaChat
 
 ## Screenshots
 
-_Add relevant screenshots here, e.g., login page, chat interface, etc._
-Registration:
+
+**Registration:**
 ![image](https://github.com/user-attachments/assets/2ad48e47-82f6-493b-9643-3e84da691517)
 
-Login:
+**Login:**
 ![image](https://github.com/user-attachments/assets/0f4a682c-2ef7-499e-8c01-22da1882f2c0)
 
-Home:
+**Home:**
 ![image](https://github.com/user-attachments/assets/0cf2674a-d24c-4169-a0eb-05c4556f32fa)
 
-Chat:
+**Chat:**
 ![image](https://github.com/user-attachments/assets/8f163de5-9f1a-4d7c-ae68-6bf8cdc1aa6b)
 
 
