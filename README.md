@@ -44,9 +44,9 @@ Follow these steps to set up the project locally:
     ```
 
 3. **Configure the Database**:
-   Update the `application.properties` file in the `src/main/resources` directory with your MongoDB connection details:
+   Update the `application.properties` file in the `src/main/resources` directory with your MySQL connection details:
     ```properties
-    spring.data.mongodb.uri=mongodb://localhost:27017/instachat
+    spring.datasource.url=jdbc:mysql://localhost:22713/defaultdb?ssl-mode=REQUIRED
     ```
 
 4. **Run the Application**:
