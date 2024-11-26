@@ -47,6 +47,7 @@ public class SecurityConfig {
                 .formLogin(form -> form
                         .loginPage("/login")
                         .permitAll()
+                        .defaultSuccessUrl("/")
                 ) // Defaults for form login (login page is automatically set)
                 .logout(logout -> logout
                         .invalidateHttpSession(true)
