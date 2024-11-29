@@ -111,6 +111,9 @@ InstaChat
 
 ## License
 
-This project is is free to use.
+This project is free to use.
 
+## Deployment
+
+This project is deployed on Render. Access the deployment - [InstaChatv2](https://instachat-1094.onrender.com/)
 
